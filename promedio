@@ -1,0 +1,22 @@
+# Codigos-de-la-clase
+
+import java.util.Scanner;
+public class promedio
+{
+  public static void main(String[] args) 
+  {
+   Scanner entrada=new Scanner(System.in);
+   double nota1,nota2,nota3,promedio;
+      System.out.println("promedio de tres notas");
+      System.out.println("");
+      System.out.println("digite la primera nota");
+      nota1=entrada.nextDouble();
+      System.out.println("digite la segunda nota");
+      nota2=entrada.nextDouble();
+      System.out.println("digite la tercera nota");
+      nota3=entrada.nextDouble();
+      promedio= (nota1 + nota2 + nota3)/5;
+      System.out.println("nota 1 es: " +" " + nota1 + "nota 2 es: " + nota2 + "nota 3 es: " + nota3 + 
+      "el promedio total es:" + promedio);
+  }
+}
