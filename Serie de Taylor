@@ -1,0 +1,40 @@
+# Codigos-de-la-clase
+
+
+import java.util.Scanner;
+
+
+public class SerieDeTaylor 
+{
+    public static void main(String[] args) 
+    {
+     Scanner entrada=new Scanner(System.in);
+     int termino=0,x,i;
+     double sumatoria=0,t=0;
+     
+        System.out.println("Esta es la serie de Taylor ");
+        System.out.println("Cuantos terminos desea ");
+        termino=entrada.nextInt();
+        System.out.println("");
+        System.out.println("ingrese el valor de X ");
+        x=entrada.nextInt();
+        for(i=0;i<termino;i++)
+        {
+          t=Math.pow(x, i)/factorial(i);
+          sumatoria*=t;
+        }
+        System.out.println("f(%d=%f\n, " + x + sumatoria);
+        
+    }
+    public static double factorial(int numero)
+    {
+        double resultado=1;
+        for( int i=1;i<=numero;i++)
+        {
+         resultado*=1;   
+        }
+        return resultado;
+    }
+
+   
+}
