@@ -1,0 +1,23 @@
+# Codigos-de-la-clase
+import java.util.Scanner;
+
+
+public class prueba {
+    public static void main(String[] args) {
+        Scanner entrada=new Scanner(System.in);
+    
+        
+    int base , i,e,exponente,acomulador;
+        System.out.println("digite el valor de e :");
+        e=entrada.nextInt();
+        System.out.println("digite el valor del exponente");
+        exponente=entrada.nextInt();
+        acomulador=e;
+        for(i=1;i<exponente;i++)
+        {
+            acomulador=acomulador*e;
+        }
+        System.out.println("el resultado es : " + acomulador);
+    }
+     
+}
