@@ -1,0 +1,42 @@
+# Codigos-de-la-clase
+import java.util.Scanner;
+
+public class coseno 
+{
+    public static void main(String[] args) 
+    {
+        Scanner leer=new Scanner(System.in);
+     int i,j,n=10;
+     double coseno=0,dividendo,divisor,signo;
+     double x;
+        System.out.println("digite el coseno de : ");
+        x=leer.nextDouble();
+     for(i=0;i<=n;i++)
+     {
+         dividendo=1;
+         for(j=0; j<2*i ;j++)
+         {
+            dividendo=dividendo*x; 
+         }
+         divisor=1;
+         for(j=1; j<=2*i ;j++)
+         {
+             divisor=divisor * j;
+         }
+         if(i%2==0)
+         {
+             signo=1;
+         }
+         else
+         {
+             signo= -1;
+         }
+         coseno= coseno + (dividendo/divisor)* signo;
+     }
+        System.out.println("coseno de : " + x  + " = " + coseno);
+        System.out.println("coseno de : " + x  + " = " + Math.cos(x));
+     
+        
+    }
+    
+}
