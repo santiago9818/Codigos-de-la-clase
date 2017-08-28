@@ -1,0 +1,29 @@
+# Codigos-de-la-clase
+
+
+
+import java.util.Scanner;
+
+
+public class Arco {
+
+    
+    public static void main(String[] args) {
+        Scanner leer=new Scanner(System.in);
+       double valor = 0;
+        double x ;
+
+        System.out.println("digite el valor para la operacion: ");
+        x=leer.nextDouble();
+ 
+valor = Math.cosh(x);
+System.out.println("Coseno Hiperbolico de " + x + " = " + valor);
+ 
+valor = Math.sinh(x);
+System.out.println("Seno Hiperbolico de " + x + " = " + valor);
+ 
+valor = Math.tanh(x);
+System.out.println("Tangente Hiperbolica de " + x + " = " + valor);
+    }
+    
+}
