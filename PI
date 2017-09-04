@@ -6,26 +6,22 @@ public class PI
  public static void main(String[] args) 
  {
   Scanner leer=new Scanner(System.in);
-     System.out.println("cuantos terminos de precision desea ");
+     System.out.println("cuantos terminos de PI desea ");
      int n=leer.nextInt();
      System.out.println("Pi = "  + pi(n));
  }
  public static  double pi(int n)
  {
-     int contador=0;
-    int   denominador=1,signo=1; 
+    double  denominador=1,signo=1; 
     double termino,sumatoria=0;
-      while(contador <n )                                
+    for( int i=1;i<=n;i++)
     {
-       termino=(double) 4/denominador * signo; 
+       termino= 4/denominador * signo; 
        sumatoria +=termino ;
        denominador += + 2;
        signo *=-1;
-       contador++;
     }
     return sumatoria;
-            
  }
- 
-    
 }
+ 
