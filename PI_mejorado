@@ -1,0 +1,38 @@
+# Codigos-de-la-clase
+
+public class Funciones 
+{
+ public double metodoPi(int numTer)
+ {
+       int indice=1,contador=0,signo=1;
+    double termino,sumaPi=0;
+    while(contador<=numTer)
+    {
+        if(indice%2!=0)
+        {
+         termino= (double)4/indice*signo; 
+         sumaPi +=  termino;
+         contador++;
+         signo*=-1;
+        }
+        indice++;
+    }
+    return sumaPi;
+     }
+ }
+ 
+ 
+ 
+ 
+ 
+ import funciones.*;
+public class pruebasMain 
+{
+    public static void main(String[] args)
+    {
+        Funciones obj=new Funciones();
+        System.out.println(obj.metodoPi(1000000000));
+        System.out.println(Math.PI);
+    }
+  
+}
