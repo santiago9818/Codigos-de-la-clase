@@ -1,0 +1,38 @@
+# Codigos-de-la-clase
+import java.util.Date;
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
+public class Cheque
+{
+  public static void main(String[] args) 
+  {
+      Scanner entrada=new Scanner (System.in);
+     Date dato=new Date();
+    
+      JOptionPane.showMessageDialog(null," CHEQUE  ");
+     String  nombre= JOptionPane.showInputDialog("Por favor introduzca el nombre del beneficiario: ");
+      
+       String apellido= JOptionPane.showInputDialog("Por favor introduzca el apellido paterno del beneficiario: ");
+      
+       String apellido1=JOptionPane.showInputDialog("Por favor introduzca el apellido materno del beneficiario: ");
+      
+     int monto = Integer.parseInt( JOptionPane.showInputDialog("porfavor introduzca el monto "));
+   
+      JOptionPane.showMessageDialog(null,"\n=====================================================================================\n"+
+              "\n  \t\t\t\tBANCO CENTRAL DE MEXICO\n +"
+              + " ");
+      JOptionPane.showMessageDialog(null,"\n  \t\t\t\tBANCO CENTRAL DE MEXICO\n  ");
+      JOptionPane.showMessageDialog(null,"\n  Sucursal Plaza Revolucion, Mexico, D.F.\t\t\t\t " + dato);
+      JOptionPane.showMessageDialog(null,"\n   \n\n\t\tPaguese este cheque a:  " +  nombre + " " +  apellido + " " +   apellido1);
+      JOptionPane.showMessageDialog(null,"\n  Por la cantidad de: %d (" +  monto);
+      JOptionPane.showMessageDialog(null,monto);
+    JOptionPane.showMessageDialog(null," pesos.)\n");
+      JOptionPane.showMessageDialog(null,"\n\n\n\t\t\t\t\t\t\t ____________________________\n");
+      JOptionPane.showMessageDialog(null,"\t\t\t\t\t\t\t\t\tFirma\n");
+      JOptionPane.showMessageDialog(null,"\n=====================================================================================\n");
+  }
+
+ 
+}
+  
